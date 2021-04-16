@@ -10,12 +10,14 @@ import {
 import Create from "./Create";
 import BlogDetail from "./BlogDetail";
 import About from "./About";
+import Author from "./Author";
 
 export default function App() {
   return (
     <Router>
       <div className="app">
         <Navbar />
+        <Author />
         <div className="content">
           <Switch>
             <Route path="/home">

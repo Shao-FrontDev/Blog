@@ -3,7 +3,7 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #333;
+  color: #fff;
   box-sizing: border-box;
 }
 
@@ -12,6 +12,9 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #282c35;
+}
 .navbar {
   padding: 20px;
   display: flex;
@@ -122,9 +125,15 @@
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
-  border: 1px solid rgb(153, 153, 153);
+  border: 1px solid #b3b3b3;
   box-sizing: border-box;
   display: block;
+  background: #f0eded;
+  color: #282c35;
+}
+
+.create textarea {
+  height: 400px;
 }
 
 .create button {
@@ -134,4 +143,11 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.author {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ffa7c4;
+  margin-top: 20px;
 }
