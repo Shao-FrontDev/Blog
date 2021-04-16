@@ -1,4 +1,4 @@
-import { NavLink, Redirect } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -11,7 +11,9 @@ const Navbar = () => {
         <NavLink to="/create" activeClassName="selected">
           New Blog
         </NavLink>
-        <Redirect exact from="/" to="home"></Redirect>
+        <NavLink to="/about" activeClassName="selected">
+          About
+        </NavLink>
       </div>
     </nav>
   );
