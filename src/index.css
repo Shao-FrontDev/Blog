@@ -54,3 +54,8 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
+
+.selected {
+  font-weight: bold;
+  color: #f1356d;
+}
