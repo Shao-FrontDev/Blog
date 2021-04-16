@@ -14,12 +14,13 @@ export default function App() {
         <Navbar />
         <div className="content">
           <Switch>
-            <Route path="/" exact>
+            <Route path="/home" exact>
               <Home />
             </Route>
             <Route path="/create">
               <Create />
             </Route>
+            
           </Switch>
         </div>
       </div>
