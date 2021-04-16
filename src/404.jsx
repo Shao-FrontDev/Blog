@@ -1,12 +1,11 @@
-import { useLocation } from "react-router-dom";
-function NoMatch() {
-  let location = useLocation();
+import { Link } from "react-router-dom";
 
+function NoMatch() {
   return (
-    <div>
-      <h3>
-        No match for <code>{location.pathname}</code>
-      </h3>
+    <div className="not-found">
+      <h2>Sorry</h2>
+      <p>That page cannot be found</p>
+      <Link to="/">Back to the homepage...</Link>
     </div>
   );
 }
