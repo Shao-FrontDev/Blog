@@ -3,10 +3,17 @@ const Create = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("mario");
+
+  const hadnleSubmit = (e) => {
+    e.preventDefault();
+    const blog = { title, body, author };
+    console.log(blog);
+  };
+
   return (
     <div className="create">
       <h2>Add a new Blog</h2>
-      <form>
+      <form onSubmit={hadnleSubmit}>
         <label>Blog title:</label>
         <input
           type="text"
@@ -30,9 +37,6 @@ const Create = () => {
           <option value="mario">mario</option>
           <option value="yoshi">yoshi</option>
         </select>
-        {title}
-        {body}
-        {author}
         <button>Add Blog</button>
       </form>
     </div>
